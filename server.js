@@ -12,7 +12,7 @@ MongoClient.connect(mongoURL, function(err, db) {
 
 console.log('App get')
 app.get("/", function(req, res){
-      res.send("All good");
+      res.send("All really good");
     })
     
 app.listen(process.env.PORT || 8080)
