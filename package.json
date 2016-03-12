@@ -1,0 +1,13 @@
+{
+  "name": "fss-url-shortener",
+  "version": "0.1.5",
+  "description": "FCC excercise",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.13.3",
+    "mongodb": "^2.1.7"
+  }
+}
