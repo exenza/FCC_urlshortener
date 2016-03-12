@@ -12,7 +12,7 @@ MongoClient.connect(mongoURL, function(err, db) {
 
 //Serve a static file with instructions
 app.get("/", function(req, res){
-      res.send("Will serve a static file...");
+      res.send("Will serve a static file in HTML");
     })
 
 //Evaluate domain
@@ -20,7 +20,6 @@ app.get("/new/*", function(req, res){
   //validate url
   
   //search url in DB
-  
   
   res.send("Evaluate domain")
 })
