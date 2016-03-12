@@ -11,5 +11,7 @@ MongoClient.connect(mongoURL, function(err, db) {
     app.get("/", function(req, res){
       res("All good");
     })
+    
+    app.listen(process.env.PORT || 5000)
   }
 });
