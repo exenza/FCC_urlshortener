@@ -17,11 +17,12 @@ app.get("/", function(req, res){
 
 //Evaluate domain
 app.get("/new/*", function(req, res){
-  console.log("evaluate domain")
   //validate url
   
   //search url in DB
   
+  
+  res.send("Evaluate domain")
 })
     
 //Redirect
