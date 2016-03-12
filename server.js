@@ -21,7 +21,7 @@ app.get("/new/*", function(req, res){
   
   //search url in DB
   
-  res.send("Evaluate domain")
+  res.send("Evaluate domain"+req.url)
 })
     
 //Redirect
