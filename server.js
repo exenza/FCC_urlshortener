@@ -10,9 +10,20 @@ MongoClient.connect(mongoURL, function(err, db) {
     console.log("We are connected");
 });
 
-console.log('App get')
+//Serve a static file with instructions
 app.get("/", function(req, res){
       res.send("Will serve a static file...");
     })
+
+//Evaluate domain
+app.get("/new/*", function(req, res){
+  res.send("Evaluate domain")
+})
     
+//Redirect
+app.get("/*", function(req, res){
+  res.send("Redirect")
+})
+
+
 app.listen(process.env.PORT || 8080)
