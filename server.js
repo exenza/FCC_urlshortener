@@ -19,7 +19,7 @@ function cDB(callback){
 
 //Serve a static file with instructions
 app.get("/", function(req, res){
-      res.send("Will serve a static file in HTML");
+      app.use('/', express.static(__dirname + '/public'));
     })
 
 //validate function
