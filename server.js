@@ -18,9 +18,7 @@ function cDB(callback){
   };
 
 //Serve a static file with instructions
-app.get("/", function(req, res){
-      app.use('/', express.static(__dirname + '/public'));
-    })
+app.use('/', express.static(__dirname + '/public'));
 
 //validate function
 function validate(url) {
